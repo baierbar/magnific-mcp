@@ -1,0 +1,19 @@
+{
+  "name": "magnific-mcp",
+  "version": "2.0.0",
+  "description": "Magnific AI (Freepik) MCP server - image & video generation via StreamableHTTP",
+  "private": true,
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "cors": "^2.8.5",
+    "express": "^5.2.1"
+  }
+}
