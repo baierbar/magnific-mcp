@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: magnific-mcp
+    runtime: node
+    buildCommand: npm install
+    startCommand: node index.js
+    healthCheckPath: /
+    envVars:
+      - key: MAGNIFIC_API_KEY
+        sync: false
+      - key: MCP_AUTH_TOKEN
+        sync: false
+      - key: NODE_ENV
+        value: production
